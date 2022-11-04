@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styleSheet.css">
+    <link rel="stylesheet" href="path/to/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+            <div class="container-fluid">
+                <nav>
+                    <h1><span>S</span>ANKAR</h1>
+                    <ul id="slidemenu">
+                        <li><a href="#header" onclick="closeMenuAgain()">Home</a></li>
+                        <li><a href="#about"  onclick="closeMenuAgain()">About</a></li>
+                        <!-- <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li> -->
+                        <li><a href="#Contact" onclick="closeMenuAgain()">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, I'm<span> Jaya Sankar</span> <br> From India</h1>
+                </div>
+            </div>
+    </div>
+
+<!-- ----------------About-------------- -->
+
+    <div id="about" class="transparent-style">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="About-Me-removebg-preview-removebg-preview.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="text-break">Hello Everyone I'm Jaya Sankar From India. Currently I am working in 
+                       <span>Dhruvsoft Services and Private Limited</span> , Which Provides a Quality Services.
+                        Dhruvsoft is a CRM Consulting, Implementation & Application Development Company.
+                        Dhruvsoft provides Salesforce outsourcing services to Salesforce.com ISV partners, 
+                        Consulting partners, small and mid-size business and large IT vendors. 
+                        Dhruvsoft's service portfolio includes Salesforce.com CRM Implementation & Support, 
+                        Force.com App Development, Salesforce Integration, Mobile Application Development,
+                        Consulting, Offshore Outsourcing, and Technical Staffing.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="fun1()">Skills</p>
+                        <p class="tab-links" onclick="fun2()">Experience</p>
+                        <p class="tab-links" onclick="fun3()">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <h6>HTML</h6>
+                        <p class="progress-bar" style="width:80% ;height:20px">80%</p>
+                        <h6>CSS</h6>
+                        <p class="progress-bar" style="width:75% ;height:20px">75%</p>
+                        <h6>Java Script</h6>
+                        <p class="progress-bar" style="width:50% ;height:20px">50%</p>
+                        <h6>SQL</h6>
+                        <p class="progress-bar" style="width:50% ;height:20px">50%</p>
+                        <h6>Python</h6>
+                        <p class="progress-bar" style="width:60% ;height:20px">60%</p>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <h6><span>2020</span></h6>
+                        <p>Worked as a Helpdesk Member in TCS ION</p>
+                        <h6><span>2022</span></h6>
+                        <p>Working as a Software Developer in Dhruvsoft Services & Private Limited</p>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <h6><span>B.Tech, Advanced Computer Science</span></h6>
+                        <p>Rajamahendri Institute of Engineering and Technology</p>
+                        <p>2018-2022</p>
+                        <h6><span>Senior Secondary (XII), Science</span></h6>
+                        <p>Sasi Edicational Institutions</p>
+                        <p>(BOARD OF INTERMEDIATE ANDHRA PARDESH board)</p>
+                        <p>2016-2018</p>
+                        <h6><span>SECONDARY(X)</span></h6>
+                        <p>RAINBOW E.M High School</p>
+                        <p>(SSC Board)</p>
+                        <p>Year of Completion:2016</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------Contact Me------------------------ -->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>
+                        <a href="mailto:jayasankardasari@gmail.com?Subject=Hello%20again">jayasankardasari@gmail.com</a>
+                    </p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>6301813119</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100025321743204" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/dasari-jaya-sankar-7008a71ab/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/JayaSha69397477" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/decent_b_o_y_dj/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Dasari Jaya Sankar.pdf" target="_blank" class="btn btn2">View CV</a>
+                    <a href="Dasari Jaya Sankar.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; Sankar</p>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+    
+</body>
+</html>
